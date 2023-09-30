@@ -10,7 +10,7 @@ void main(List<String> arguments) async {
 
   final response = await http.get(url); //делаем запрос на http
 
-  Map<String, dynamic> jsonData = convert.jsonDecode(response.body); //
+  Map<String, dynamic> jsonData = convert.jsonDecode(response.body); //преобразовываем json в массив
 
   List<dynamic> products = jsonData["products"]; //создаем список продуктов
 
